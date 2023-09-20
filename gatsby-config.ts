@@ -8,13 +8,12 @@ const config: GatsbyConfig = {
   flags: {
     DEV_SSR: true
   },
+  jsxRuntime: 'automatic',
   plugins: [
     {
       resolve: `gatsby-plugin-jaen`,
       options: {
-        // The folder where the page templates are located
-        pageTemplateFolder: `src/templates`,
-        snekResourceId: `<YOUR_SNEK_RESOURCE_ID>`
+        snekResourceId: `6129e31d-b2a7-4cc9-a963-ca2a759562fb`
       }
     }
   ]
