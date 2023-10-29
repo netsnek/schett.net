@@ -4,13 +4,16 @@ import {Box, Button} from '@chakra-ui/react'
 import {graphql} from 'gatsby'
 import * as React from 'react'
 import {sq} from '../client/src'
+import HeroSection from '../components/Hero'
+import Footer from '../components/Footer'
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <Box as="main">
-      <Field.Text name="welcome" placeholder="Welcome to your Jaen website!" />
-
-      <Button
+      {/* <Field.Text name="welcome" placeholder="Welcome to your Jaen website!" /> */}
+      <HeroSection />
+      <Footer />
+      {/* <Button
         onClick={() => {
           sq.query(q => q.resource({id: snekResourceId}).name).then(
             ([resource, errors]) => {
@@ -19,7 +22,7 @@ const IndexPage: React.FC<PageProps> = () => {
           )
         }}>
         Resource
-      </Button>
+      </Button> */}
     </Box>
   )
 }
