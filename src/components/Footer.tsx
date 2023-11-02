@@ -11,7 +11,6 @@ import {
     VStack
   } from '@chakra-ui/react';
   import { FC, ReactNode } from 'react';
-  import { useNavOffset } from '../../shared/hooks/use-nav-offset';
   import { Field, useAuthenticationContext } from '@atsnek/jaen';
   
   import Logo from '../gatsby-plugin-jaen/components/Logo';
