@@ -153,6 +153,7 @@ import {
               9184, St. Jakob i.R. <br>
               Austria <br>
               <br>
+              Email: office@fhkit.at<br>
               Tel: +43 650 824 88 11"
               mt={10}
               maxW={{ base: 'full', lg: '50%' }}

@@ -11,6 +11,7 @@ import {
   Stack,
   Text,
   useColorModeValue,
+  Image
 } from "@chakra-ui/react";
 import { useContactModal } from "../services/contact";
 import { Field } from "@atsnek/jaen";
@@ -129,8 +130,15 @@ const HeroSection = () => {
               <source src="/N0jxFNt.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video> */}
-            <Field.Image
+            {/* <Field.Image
               name="HeroImage"
+              alt="Hero Image"
+              defaultValue="/images/florian_kleber.jpg"
+              h="full"
+              w="full"
+            /> */}
+            <Image
+              src="/images/florian_kleber.jpg"
               alt="Hero Image"
               h="full"
               w="full"
