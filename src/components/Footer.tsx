@@ -157,11 +157,11 @@ const Footer: FC = () => {
         </Box>
         <Flex mt={20} color="white" wrap={{base: 'wrap', sm: 'nowrap'}}>
           <Flex alignItems={"center"}>
-            <Logo w="100px" h="200px"/>
+            <Logo w="100px" h="200px" mr={-4} />
             <Field.Text
               name="FooterLogoText"
               defaultValue="leber"
-              display={{ base: "none", md: "flex"}}
+              //display={{ base: "none", md: "flex"}}
               as={Heading}
               whiteSpace={"nowrap"}
               size="h5030"
