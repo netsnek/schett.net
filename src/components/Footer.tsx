@@ -39,8 +39,12 @@ import {
           isTitle: true
         },
         {
-          label: 'Lilli Mauz',
-          href: '#'
+          label: 'Nico Schett',
+          href: 'https://schett.net'
+        },
+        {
+          label: 'Christoph Clementschitsch',
+          href: 'https://neurons.at'
         }
       ],
       [
@@ -50,10 +54,6 @@ import {
         },
         {
           label: 'Florian Kleber',
-          href: '#'
-        },
-        {
-          label: 'Alexander Kleber',
           href: '#'
         }
       ]
@@ -149,11 +149,11 @@ import {
             </Flex>
             <Field.Text
               name="FooterTextNew"
-              defaultValue="St. Johanner Straße 10 <br>
-              9371, Brückl <br>
+              defaultValue="Dreilach 16 <br>
+              9184, St. Jakob i.R. <br>
               Austria <br>
               <br>
-              Tel: +43 676 4002330"
+              Tel: +43 650 824 88 11"
               mt={10}
               maxW={{ base: 'full', lg: '50%' }}
               fontSize="xl"

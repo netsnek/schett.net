@@ -27,6 +27,7 @@ import Logo from "../../gatsby-plugin-jaen/components/Logo";
 import { MobileHambuger } from "./MobileHamburger";
 import { NavAuthButton } from "./NavAuthButton";
 import { FaUser } from "@react-icons/all-files/fa/FaUser";
+import { Field } from "@atsnek/jaen";
 
 interface INavbarProps {
   pathname: string;
@@ -61,16 +62,19 @@ export const Navbar: FC<INavbarProps> = ({
 
       <Flex flex="1" justifyContent="center">
         <HStack as={LinkBox} w="max-content">
-          <Logo maxH="50px"/>
-          <Text 
-          whiteSpace={"nowrap"}
+          <Logo maxH="50px" maxW="50px" mr="3"/>
+          <Text
+            display={{ base: "none", md: "flex"}}
             as={Heading}
+            whiteSpace={"nowrap"}
             size="h5030"
             fontSize="5xl"
             lineHeight={1}
             fontWeight="bold"
-            color={"#b57edc"}>
-              Barbara Mauz
+            //textAlign="left"
+            //color="#b57edc"
+          >
+            Florian Herbert Kleber IT
           </Text>
         </HStack>
       </Flex>

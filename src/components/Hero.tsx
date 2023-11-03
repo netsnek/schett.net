@@ -26,7 +26,7 @@ const HeroSection = () => {
   return (
     <Container maxW="6xl" px={{ base: 6, md: 3 }} py={24}>
       <Stack
-        direction={{ base: "column-reverse", md: "row" }}
+        direction={{ base: "column-reverse", lg: "row" }}
         justifyContent="center"
       >
         <Stack
@@ -49,7 +49,7 @@ const HeroSection = () => {
               lineHeight={1}
               rounded="full"
               color="white"
-              bgGradient="linear(to-l, #b57edc,#2563eb)"
+              bgColor="brand.500"
             >
               Für dich
             </Box>
@@ -67,9 +67,9 @@ const HeroSection = () => {
             lineHeight={1}
             fontWeight="bold"
             textAlign="left"
-            color="#b57edc"
+            color="#000000"
             name="HeroSectionHeading"
-            defaultValue="Lass dich von <br />
+            defaultValue="Lass dich von <br/>
             mir beraten"
           />
           <Field.Text
@@ -79,14 +79,11 @@ const HeroSection = () => {
             fontWeight="400"
             color="gray.500"
             name="HeroSectionText"
-            defaultValue="Willkommen bei Barbara Mauz 🌿💦 Ins Leben gerufen durch die reine
-            Mutterliebe von Barbara für ihre Tochter Lilli, bieten wir
-            handgefertigte, natürliche Seifenkreationen an. 🌼
-            Unsere Produkte sind babyfreundlich und bestehen aus natürlichen
-            Wirkstoffen und ätherischen Ölen. 🌱 Perfekt für alle, die sich
-            eine chemikalienfreie Hautpflege wünschen. Hergestellt in Brückl,
-            Kärnten, Austria. Und ja, sie sind sogar essbar (aber wir empfehlen
-            doch das Naschen nicht 😉)."
+            defaultValue="Entdecke mit mir die Welt der IT-Dienstleistungen. 💻🚀 Als professioneller IT-Berater helfe ich dir dabei, deine technischen Herausforderungen zu meistern. 🎯 Meine Spezialgebiete sind Security und Cloudcomputing. ⛅🔒 <br/>
+            <br/>
+            Auf der Suche nach einer Optimierung deines Systems?<br/>
+            <br/>
+            Lass dich von mir beraten! 🤝 Erfahrung, Leidenschaft und technisches Know-how aus Wien. Und ja, ich finde immer eine Lösung (aber ich empfehle, das Problem nicht selbst zu lösen 😉)."
           />
           <HStack
             spacing={{ base: 0, sm: 2 }}
@@ -101,13 +98,8 @@ const HeroSection = () => {
               size="lg"
               rounded="md"
               mb={{ base: 2, sm: 0 }}
-              zIndex={5}
+              zIndex={1}
               lineHeight={1}
-              bgGradient="linear(to-l, #b57edc,#2563eb)"
-              _hover={{
-                bgGradient: "linear(to-l, #b57edc,#2563eb)",
-                opacity: 0.9,
-              }}
               onClick={onContactClick}
             >
               Kontaktiere mich
@@ -124,7 +116,7 @@ const HeroSection = () => {
               rounded="md"
               boxShadow="md"
               as={Link}
-              zIndex={55555555}
+              zIndex={1}
             >
               Workshops
             </Flex>
@@ -133,10 +125,16 @@ const HeroSection = () => {
         <Box ml={{ base: 0, md: 5 }} pos="relative" flex="1">
           <DottedBox />
           <Box borderRadius={"xl"} overflow={"hidden"} m={"10%"}>
-            <video autoPlay muted>
+            {/* <video autoPlay muted>
               <source src="/N0jxFNt.mp4" type="video/mp4" />
               Your browser does not support the video tag.
-            </video>
+            </video> */}
+            <Field.Image
+              name="HeroImage"
+              alt="Hero Image"
+              h="full"
+              w="full"
+            />
           </Box>
         </Box>
       </Stack>

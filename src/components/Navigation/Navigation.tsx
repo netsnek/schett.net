@@ -30,6 +30,7 @@ const Navigation: FC<INavigationProps> = ({path}) => {
         pos={'sticky'}
         top={(isAuthenticated ? '4rem' : '0')}
         // mt={mode === 'store' ? (isAuthenticated ? '4rem' : '0') : undefined}
+        //bg="rgba(244,248,250,.9)"
         bg="rgba(255,255,255,.9)"
         backdropFilter={'blur(7px)'}>
         <Stack spacing="0">
