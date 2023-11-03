@@ -182,7 +182,7 @@ const Footer: FC = () => {
         <Divider mt={20} opacity={0.1} />
         <Field.Text
           name="FooterBottomText"
-          defaultValue="Copyright © 2023 Florian Kleber, Florian Kleber IT. All rights reserved."
+          defaultValue="Copyright © 2023 Florian Kleber, Florian Herbert Kleber IT. All rights reserved."
           mt={5}
           color="white"
           opacity={0.2}
