@@ -27,7 +27,7 @@ const HeroSection = () => {
   }
 
   return (
-    <Container maxW="6xl" px={{base: 6, md: 3}} py={24}>
+    <Container maxW="6xl" px={{base: 6, md: 3}} py={24} overflow={"hidden"}>
       <Stack
         direction={{base: 'column-reverse', lg: 'row'}}
         justifyContent="center">
@@ -66,8 +66,7 @@ const HeroSection = () => {
           </HStack>
           <Field.Text
             as={Heading}
-            size="h5030"
-            fontSize="5xl"
+            fontSize={{base: "4xl", lg: "5xl"}}
             lineHeight={1}
             fontWeight="bold"
             textAlign="left"

@@ -133,7 +133,7 @@ const Footer: FC = () => {
               <Field.Text
                 name="FooterTitleLine1"
                 defaultValue="Danke für deinen Besuch!"
-                fontSize="6xl"
+                fontSize="4xl"
                 fontWeight="500"
                 w={{base: 'full', lg: 'fit-content'}}
                 display={{base: 'block', lg: 'initial'}}
@@ -164,7 +164,6 @@ const Footer: FC = () => {
               //display={{ base: "none", md: "flex"}}
               as={Heading}
               whiteSpace={"nowrap"}
-              size="h5030"
               fontSize="5xl"
               lineHeight={1}
               fontWeight="bold"

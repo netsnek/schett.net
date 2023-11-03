@@ -123,8 +123,7 @@ const ContentSection = () => {
         <Field.Text
           mb="10"
           as={Heading}
-          size="h5030"
-          fontSize="5xl"
+          fontSize={{base: "4xl", lg: "5xl"}}
           lineHeight={1}
           fontWeight="bold"
           textAlign="left"
@@ -165,8 +164,7 @@ const ContentSection = () => {
           <Field.Text
             mb="10"
             as={Heading}
-            size="h5030"
-            fontSize="5xl"
+            fontSize={{base: "4xl", lg: "5xl"}}
             lineHeight={1}
             fontWeight="bold"
             textAlign="left"
