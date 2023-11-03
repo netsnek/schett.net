@@ -151,7 +151,7 @@ const Footer: FC = () => {
               Tel: +43 650 824 88 11"
             mt={10}
             maxW={{base: 'full', lg: '50%'}}
-            fontSize="xl"
+            fontSize="1.1rem"
             textAlign={{base: 'center', lg: 'initial'}}
           />
         </Box>

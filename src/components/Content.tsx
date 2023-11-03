@@ -133,6 +133,7 @@ const ContentSection = () => {
         />
         <Field.Text
           mb="16"
+          fontSize="1.2rem"
           textAlign="left"
           fontWeight="400"
           color="gray.500"
@@ -172,6 +173,7 @@ const ContentSection = () => {
             defaultValue="Partner 🤝"
           />
           <Field.Text
+            fontSize="1.2rem"
             color="gray.500"
             name="ContentSectionTextTeam"
             defaultValue="Ich bieten branchenübergreifende Kundenbetreuung mit Unterstützung von Experten aus meinem Netzwerk. Gemeinsam mit unseren Partnern, decken wir ein breites Spektrum an Dienstleistungen ab. Wir sind für dich da, um alle deine technologischen Herausforderungen zu meistern💪🚀!"
