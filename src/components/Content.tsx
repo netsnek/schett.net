@@ -37,7 +37,7 @@ const TestimonialContent = (props: Props) => {
       mt="5"
       p={8}
       rounded={'xl'}
-      align={'center'}
+      //align={'center'}
       pos={'relative'}
       _after={{
         content: `""`,
@@ -75,7 +75,7 @@ const TestimonialText = (props: Props) => {
 
   return (
     <Text
-      textAlign={'center'}
+      //textAlign={'center'}
       color={useColorModeValue('gray.600', 'gray.400')}
       fontSize={'sm'}>
       {children}
@@ -133,7 +133,7 @@ const ContentSection = () => {
           defaultValue="Wilkommen! 🙌 "
         />
         <Field.Text
-          mb="48"
+          mb="16"
           textAlign="left"
           fontWeight="400"
           color="gray.500"
@@ -161,7 +161,7 @@ const ContentSection = () => {
         />
       </Container>
       <Container maxW={'4xl'} pt={16} as={Stack} spacing={12}>
-        <Stack spacing={0} align={'center'}>
+        <Stack spacing={0}>
           <Field.Text
             mb="10"
             as={Heading}
@@ -171,7 +171,7 @@ const ContentSection = () => {
             fontWeight="bold"
             textAlign="left"
             name="ContentSectionHeadingTeam"
-            defaultValue="Unsere Partner 🤝"
+            defaultValue="Partner 🤝"
           />
           <Field.Text
             color="gray.500"
@@ -221,9 +221,9 @@ const ContentSection = () => {
         </Stack>
       </Container>
       <Flex flex={1} width={'100%'} overflow={'hidden'}>
+        <Neurons display={{base: 'none', sm: 'flex'}}/>
         <Neurons display={{base: 'none', md: 'flex'}} />
-        <Neurons display={{lg: 'none', xl: 'flex'}} />
-        <Neurons />
+        <Neurons display={{base: 'none', xl: 'flex'}} />
         <Neurons />
       </Flex>
     </Box>

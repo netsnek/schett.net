@@ -39,7 +39,7 @@ export const MobileHambuger: React.FC<{
         icon={
           isOpen ? <CloseIcon /> : <HamburgerIcon />
         }
-        variant={"ghost"}
+        //variant={"ghost"}
         aria-label="Menu"
       />
 

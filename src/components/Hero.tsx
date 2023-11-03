@@ -11,51 +11,54 @@ import {
   Stack,
   Text,
   useColorModeValue,
-  Image
-} from "@chakra-ui/react";
-import { useContactModal } from "../services/contact";
-import { Field } from "@atsnek/jaen";
+  Image,
+  Icon
+} from '@chakra-ui/react'
+import {useContactModal} from '../services/contact'
+import {Field} from '@atsnek/jaen'
+import {FaGithub} from '@react-icons/all-files/fa/FaGithub'
 
 const HeroSection = () => {
-  const contactModal = useContactModal();
+  const contactModal = useContactModal()
   const onContactClick = () => {
     contactModal.onOpen({
-      meta: {},
-    });
-  };
+      meta: {}
+    })
+  }
 
   return (
-    <Container maxW="6xl" px={{ base: 6, md: 3 }} py={24}>
+    <Container maxW="6xl" px={{base: 6, md: 3}} py={24}>
       <Stack
-        direction={{ base: "column-reverse", lg: "row" }}
-        justifyContent="center"
-      >
+        direction={{base: 'column-reverse', lg: 'row'}}
+        justifyContent="center">
         <Stack
           direction="column"
           spacing={6}
           justifyContent="center"
-          maxW="480px"
-        >
+          maxW="480px">
           <HStack
             as={LinkBox}
             p={1}
             rounded="full"
             fontSize="sm"
             w="max-content"
-            bg={useColorModeValue("gray.300", "gray.700")}
-          >
+            bg={useColorModeValue('gray.300', 'gray.700')}
+            onClick={onContactClick}
+            _hover={{
+              textDecoration: 'underline',
+              bg: useColorModeValue('gray.100', 'gray.700')
+            }}>
             <Box
               py={1}
               px={2}
               lineHeight={1}
               rounded="full"
               color="white"
-              bgColor="brand.500"
-            >
+              bgColor="brand.500">
               Für dich
             </Box>
             <HStack spacing={1} alignItems="center" justifyContent="center">
-              <Text as={LinkOverlay} lineHeight={1}>
+              <Text as={LinkOverlay} lineHeight={1} mr={2}>
                 Kostenlose Erstberatung
               </Text>
               {/* <Icon as={GoChevronRight} w={4} h={4} /> */}
@@ -87,45 +90,50 @@ const HeroSection = () => {
             Lass dich von mir beraten! 🤝 Erfahrung, Leidenschaft und technisches Know-how aus Wien. Und ja, ich finde immer eine Lösung (aber ich empfehle, das Problem nicht selbst zu lösen 😉)."
           />
           <HStack
-            spacing={{ base: 0, sm: 2 }}
-            mb={{ base: "3rem !important", sm: 0 }}
-            flexWrap="wrap"
-          >
+            spacing={{base: 0, sm: 2}}
+            mb={{base: '3rem !important', sm: 0}}
+            flexWrap="wrap">
             <Button
-              w={{ base: "100%", sm: "auto" }}
+              w={{base: '100%', sm: 'auto'}}
               h={12}
               px={6}
               color="white"
               size="lg"
               rounded="md"
-              mb={{ base: 2, sm: 0 }}
+              mb={{base: 2, sm: 0}}
               zIndex={1}
               lineHeight={1}
-              onClick={onContactClick}
-            >
+              onClick={onContactClick}>
               Kontaktiere mich
               {/* <Icon as={MdBolt} h={4} w={4} ml={1} /> */}
             </Button>
             <Flex
               justifyContent="center"
-              bg={useColorModeValue("white", "gray.800")}
-              w={{ base: "100%", sm: "auto" }}
+              alignItems={'center'}
+              bg={useColorModeValue('white', 'gray.800')}
+              w={{base: '100%', sm: 'auto'}}
               border="1px solid"
               borderColor="gray.300"
               p={3}
               lineHeight={1.18}
               rounded="md"
               boxShadow="md"
-              as={Link}
+              as={LinkBox}
               zIndex={1}
-            >
-              Workshops
+              _hover={{
+                textDecoration: 'underline',
+                bg: useColorModeValue('gray.100', 'gray.700')
+              }}>
+              <Icon as={FaGithub} w={4} h={4} mr={2} />
+              <LinkOverlay href="https://github.com/kleberbaum" isExternal>
+                GitHub
+              </LinkOverlay>
             </Flex>
           </HStack>
         </Stack>
-        <Box ml={{ base: 0, md: 5 }} pos="relative" flex="1">
+        <Box ml={{base: 0, md: 5}} pos="relative" flex="1">
           <DottedBox />
-          <Box borderRadius={"xl"} overflow={"hidden"} m={"10%"}>
+          <Box borderRadius={'xl'} overflow={'hidden'} m={'10%'}>
             {/* <video autoPlay muted>
               <source src="/N0jxFNt.mp4" type="video/mp4" />
               Your browser does not support the video tag.
@@ -147,8 +155,8 @@ const HeroSection = () => {
         </Box>
       </Stack>
     </Container>
-  );
-};
+  )
+}
 
 function DottedBox() {
   return (
@@ -158,14 +166,12 @@ function DottedBox() {
       top="-30px"
       height="full"
       maxW="700px"
-      zIndex={-1}
-    >
+      zIndex={-1}>
       <svg
-        color={useColorModeValue("rgba(55,65,81, 0.1)", "rgba(55,65,81, 0.7)")}
+        color={useColorModeValue('rgba(55,65,81, 0.1)', 'rgba(55,65,81, 0.7)')}
         width="350"
         height="420"
-        fill="none"
-      >
+        fill="none">
         <defs>
           <pattern
             id="5d0dd344-b041-4d26-bec4-8d33ea57ec9b"
@@ -173,19 +179,17 @@ function DottedBox() {
             y="0"
             width="20"
             height="20"
-            patternUnits="userSpaceOnUse"
-          >
+            patternUnits="userSpaceOnUse">
             <rect x="0" y="0" width="4" height="4" fill="currentColor"></rect>
           </pattern>
         </defs>
         <rect
           width="404"
           height="404"
-          fill="url(#5d0dd344-b041-4d26-bec4-8d33ea57ec9b)"
-        ></rect>
+          fill="url(#5d0dd344-b041-4d26-bec4-8d33ea57ec9b)"></rect>
       </svg>
     </Box>
-  );
+  )
 }
 
-export default HeroSection;
+export default HeroSection
