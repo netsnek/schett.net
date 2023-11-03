@@ -96,7 +96,7 @@ export const MobileHambuger: React.FC<{
                 <Tooltip label="Login">
                   <Button
                     w="full"
-                    variant="outline"
+                    //variant="outline"
                     leftIcon={<FaUser />}
                     onClick={openLoginModal}
                   >
