@@ -25,12 +25,8 @@ import {
           isTitle: true
         },
         {
-          label: 'Terms & Conditions',
-          href: '#'
-        },
-        {
-          label: 'Imprint',
-          href: '#'
+          label: 'Impressum',
+          href: '/impressum'
         }
       ],
       [
