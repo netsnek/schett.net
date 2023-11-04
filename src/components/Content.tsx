@@ -251,7 +251,7 @@ const ContentSection = () => {
           textAlign="left"
           //color="#b57edc"
           name="MapSectionHeading"
-          defaultValue="Temporäre <br/>Büroräume 📦💼"
+          defaultValue="Büroräume 📦💼"
         />
         <Box
           mb="8"

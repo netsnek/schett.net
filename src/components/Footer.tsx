@@ -43,12 +43,12 @@ const Footer: FC = () => {
         href: 'https://www.linkedin.com/in/kleberbaum/'
       },
       {
-        label: 'Instagram',
-        href: 'https://www.instagram.com/kleberbaum/'
-      },
-      {
         label: 'Telegram',
         href: 'https://t.me/kleberbaum'
+      },
+      {
+        label: 'Instagram',
+        href: 'https://www.instagram.com/kleberbaum/'
       },
       {
         label: 'Impressum',
@@ -75,7 +75,7 @@ const Footer: FC = () => {
         isTitle: true
       },
       {
-        label: 'Florian Kleber',
+        label: 'Florian H. Kleber',
         href: 'https://github.com/in/kleberbaum/'
       }
     ]
@@ -274,7 +274,7 @@ const Footer: FC = () => {
         <Divider mt={0} opacity={0.1} />
         <Field.Text
           name="FooterBottomText"
-          defaultValue="Copyright © 2023 Florian Kleber, Florian Herbert Kleber IT. All rights reserved."
+          defaultValue="Copyright © 2023 Florian H. Kleber, Florian Herbert Kleber IT. All rights reserved."
           mt={5}
           color="white"
           opacity={0.2}

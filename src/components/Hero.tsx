@@ -163,7 +163,7 @@ const HeroSection = () => {
               as={LinkBox}
               direction={'row'}
               spacing="0"
-              mx="-12px"
+              //mx="-12px"
               flexWrap={'wrap'}>
               <IconButton
                 as={LinkOverlay}
