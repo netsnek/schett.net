@@ -67,6 +67,10 @@ const Footer: FC = () => {
       {
         label: 'Christoph Clementschitsch',
         href: 'https://neurons.at'
+      },
+      {
+        label: 'Kanbon',
+        href: 'https://kanbon.at'
       }
     ],
     [
