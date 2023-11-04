@@ -16,6 +16,8 @@ import {
 import {useContactModal} from '../services/contact'
 import {Field} from '@atsnek/jaen'
 import Neurons from './Neurons'
+import {FeaturedProducts} from './organisms/FeaturedProductsSection/FeaturedProductsSection'
+import {GoogleMaps} from './GoogleMaps'
 
 interface Props {
   children: React.ReactNode
@@ -94,7 +96,7 @@ const TestimonialAvatar = ({
 }) => {
   return (
     <Flex align={'center'} mt={8} direction={'column'}>
-      <Avatar src={src} mb={2} objectFit={"contain"} />
+      <Avatar src={src} mb={2} objectFit={'contain'} />
       <Stack spacing={-1} align={'center'}>
         <Text fontWeight={600}>{name}</Text>
         <Text fontSize={'sm'} color={useColorModeValue('gray.600', 'gray.400')}>
@@ -120,10 +122,12 @@ const ContentSection = () => {
         maxW="4xl"
         px={{base: 6, md: 3}}
         py={24}>
+        {/* <FeaturedProducts anchor='test' featuredProducts={[{image: "https://osg.snek.at/storage/BQACAgQAAxkDAAIsW2VFGtrO0UmpkYZV0BgslLcByh8qAAJRDwACCtMwUiMJbD4kmhDjLwQ", handle: "", product: ""},]} productsPagePath=''/> */}
         <Field.Text
-          mb="10"
+          mt={{base: '20 !important', md: '0'}}
+          mb="8"
           as={Heading}
-          fontSize={{base: "4xl", lg: "5xl"}}
+          fontSize={{base: '4xl', lg: '5xl'}}
           lineHeight={1}
           fontWeight="bold"
           textAlign="left"
@@ -132,7 +136,7 @@ const ContentSection = () => {
           defaultValue="Wilkommen! 🙌 "
         />
         <Field.Text
-          mb="16"
+          //mb="16"
           fontSize="1.2rem"
           textAlign="left"
           fontWeight="400"
@@ -163,9 +167,10 @@ const ContentSection = () => {
       <Container maxW={'4xl'} pt={16} as={Stack} spacing={12}>
         <Stack spacing={0}>
           <Field.Text
-            mb="10"
+            mt={{base: '20 !important', md: '0'}}
+            mb="8"
             as={Heading}
-            fontSize={{base: "4xl", lg: "5xl"}}
+            fontSize={{base: '4xl', lg: '5xl'}}
             lineHeight={1}
             fontWeight="bold"
             textAlign="left"
@@ -219,9 +224,35 @@ const ContentSection = () => {
             />
           </Testimonial>
         </Stack>
+        <Field.Text
+          mt={{base: '20 !important', md: '0'}}
+          mb="8"
+          as={Heading}
+          fontSize={{base: '4xl', lg: '5xl'}}
+          lineHeight={1}
+          fontWeight="bold"
+          textAlign="left"
+          //color="#b57edc"
+          name="MapSectionHeading"
+          defaultValue="Temporäre Büroräume 📦💼"
+        />
+        <Box
+          mb="8"
+          h="xl"
+          w="full"
+          borderRadius="xl"
+          overflow="hidden"
+          boxShadow="dark">
+          <GoogleMaps
+            objectFit="cover"
+            h="full"
+            w="100%"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2658.9368830188732!2d16.390513676126197!3d48.207831646267955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d0712a8ac8f77%3A0x79ca06186618927c!2sL%C3%B6wengasse%2028%2C%201030%20Wien!5e0!3m2!1sen!2sat!4v1699083025628!5m2!1sen!2sat"
+          />
+        </Box>
       </Container>
       <Flex flex={1} width={'100%'} overflow={'hidden'}>
-        <Neurons display={{base: 'none', sm: 'flex'}}/>
+        <Neurons display={{base: 'none', sm: 'flex'}} />
         <Neurons display={{base: 'none', md: 'flex'}} />
         <Neurons display={{base: 'none', xl: 'flex'}} />
         <Neurons />

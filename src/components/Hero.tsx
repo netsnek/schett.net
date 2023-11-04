@@ -86,7 +86,7 @@ const HeroSection = () => {
             <br/>
             Auf der Suche nach einer Optimierung deines Systems?<br/>
             <br/>
-            Lass dich von mir beraten! 🤝 Erfahrung, Leidenschaft und technisches Know-how aus Wien. Und ja, ich finde immer eine Lösung (aber ich empfehle, das Problem nicht selbst zu lösen 😉)."
+            Lass dich von mir beraten! 🤝 Erfahrung, Leidenschaft und technisches Know-how aus Österreich. Und ja, ich finde immer eine Lösung (aber ich empfehle, das Problem nicht selbst zu lösen 😉)."
           />
           <HStack
             spacing={{base: 0, sm: 2}}
