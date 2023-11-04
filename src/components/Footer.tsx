@@ -26,6 +26,26 @@ const Footer: FC = () => {
         isTitle: true
       },
       {
+        label: 'GitHub',
+        href: 'https://github.com/in/kleberbaum/'
+      },
+      {
+        label: 'LinkedIn',
+        href: 'https://www.linkedin.com/in/kleberbaum/'
+      },
+      {
+        label: 'Instagram',
+        href: 'https://www.instagram.com/kleberbaum/'
+      },
+      {
+        label: 'Telegram',
+        href: 'https://t.me/kleberbaum'
+      },
+      {
+        label: 'Twitter',
+        href: 'https://twitter.com/kleberbaum'
+      },
+      {
         label: 'Impressum',
         href: '/impressum'
       }
@@ -51,7 +71,7 @@ const Footer: FC = () => {
       },
       {
         label: 'Florian Kleber',
-        href: '#'
+        href: 'https://github.com/in/kleberbaum/'
       }
     ]
   ]

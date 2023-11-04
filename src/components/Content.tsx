@@ -142,26 +142,25 @@ const ContentSection = () => {
           fontWeight="400"
           color="gray.500"
           name="ContentSectionText"
-          defaultValue='
-        Es fühlt sich an, als wäre es immer meine Leidenschaft gewesen, meine eigenen Unternehmen zu führen und mit Technologie zu jonglieren. Heute möchte ich mit euch darüber sprechen – von den Artikelanfängen bis zur aktuellen Realität und die Zukunft, die wir gerade gestalten. 🚀💻
-        <br/><br/>
-        Die Gründung von Florian Herbert Kleber IT am 21.07.2020, war der Beginn meiner Reise in die faszinierende Welt der Informationstechnologie. Angetrieben von meiner Leidenschaft✨, wollte ich den Bedarf an qualitativ hochwertigen und maßgeschneiderten IT-Dienstleistungen erfüllen und so gründete ich dieses Unternehmen in Dreilach. Aber schon bald, werden wir unseren Sitz nach Wien verlegen. 📦💼
-        <br/><br/>
-        Ich habe stets unseren Fokus auf Cyber-Security 🔒, Cloud-Diensten ☁️ und Softwareentwicklung 🎨 gelegt, stets bestrebt, die besten Lösungen für unsere Kunden zu bieten. 🙌 Unser Berufszweig ermöglicht es uns, für eine Vielzahl von Branchen zu arbeiten, immer auf der Suche nach den besten IT-Lösungen für jedes einzelne Unternehmen.
-        <br/><br/>
-        Während dieser wunderbaren Reise hatten wir die Chance, unglaubliche Projekte zu verwirklichen, zusammen mit einigen der besten Experten unseres Netzwerks. 🌐 Eines meiner liebsten Projekte war die Zusammenarbeit mit einem unserer Partner, um ein erfolgreiches ERP-System namens "Jaen" zu entwickeln! 😎
-        <br/><br/>
-        Nun, wir ruhen uns nicht auf unseren Lorbeeren aus. Unser Unternehmen ist stets bemüht, sich weiterzuentwickeln und unser Angebot zu verfeinern. Deshalb freue ich mich, euch einen kleinen Leckerbissen unserer kommenden Unternehmungen zu geben... 😉 
-        <br/><br/>
-        Wir planen die Gründung einer neuen Abteilung für Softwareentwicklung für Enterprise-Software! Es ist eine aufregende Zeit, und wir sind bereit, neue Meilensteine zu erreichen. 💡🎯
-        <br/><br/>
-        Es ist wirklich erstaunlich zu sehen, wie weit Florian Herbert Kleber IT gekommen ist und ich bin begeistert von dem, was noch kommen wird. Unsere Arbeit ist unsere Leidenschaft und wir geben immer unser bestes, um der IT-Welt das Beste von uns zu geben.
-        <br/><br/>
-        Ich möchte mich bei euch bedanken, dass ihr uns auf dieser spannenden Reise begleitet und wir können es kaum erwarten, euch zu zeigen, was als Nächstes kommt! 🚀
-        <br/><br/>
-        Behaltet also unsere Updates im Auge. Bis dahin, bleibt sicher und digital! 😉👍
-        <br/><br/>
-        - Florian'
+          defaultValue='Es war schon immer meine Leidenschaft, eigene Unternehmen zu leiten und mit Technologie zu jonglieren. Heute möchte ich mit dir darüber sprechen – von den Anfängen bis zur aktuellen Realität und der Zukunft, die wir gerade gestalten. 🚀
+          <br/><br/>
+          Meine Reise in die faszinierende Welt der Informationstechnologie begann mit der Gründung von Florian Herbert Kleber IT am 21.07.2020. Getrieben von meiner Leidenschaft✨, wollte ich den Bedarf an qualitativ hochwertigen und maßgeschneiderten IT-Dienstleistungen erfüllen. Daher gründete ich dieses Unternehmen in Villach, doch schon bald werden wir unseren Firmensitz nach Wien verlegen. 📦💼
+          <br/><br/>
+          Mein Fokus liegt immer auf Cyber-Security 🔒, Cloud-Diensten ☁️ und Softwareentwicklung 🎨, stets darauf bedacht, die besten Lösungen für meine Kunden zu bieten. 🙌 Mein Berufszweig ermöglicht es mir, für eine Vielzahl von Branchen zu arbeiten, immer auf der Suche nach den besten IT-Lösungen für jedes einzelne Unternehmen.
+          <br/><br/>
+          Auf dieser wunderbaren Reise hatten wir die Chance, unglaubliche Projekte zu verwirklichen, zusammen mit einigen der besten Experten in meinem Netzwerk. 🌐 Eines meiner liebsten Projekte war die Zusammenarbeit mit einem meiner Partner zur Entwicklung eines erfolgreichen ERP-Systems namens "Jaen". 😎
+          <br/><br/>
+          Ich ruhe mich aber nicht auf meinen Lorbeeren aus. Mein Unternehmen ist stets bemüht, sich weiterzuentwickeln und unser Angebot zu verfeinern. Deshalb freue ich mich, dir einen kleinen Vorgeschmack auf meine kommenden Unternehmungen geben zu können... 😉 
+          <br/><br/>
+          Wir planen die Gründung eines neuen Unternehmens für die Entwicklung von Enterprise-Software! Es ist eine aufregende Zeit und wir sind bereit, neue Meilensteine zu setzen. 💡🎯
+          <br/><br/>
+          Es ist erstaunlich zu sehen, wie weit Florian Herbert Kleber IT gekommen ist und ich freue mich auf das, was noch kommen wird. Unsere Arbeit ist unsere Leidenschaft und wir geben immer unser Bestes, um der IT-Welt das Beste von uns zu geben.
+          <br/><br/>
+          Ich danke dir, dass du mich auf dieser spannenden Reise begleitest und wir können es kaum erwarten, dir zu zeigen, was als Nächstes kommt! 🚀
+          <br/><br/>
+          Behalte also unsere Updates im Auge. Bis dahin, bleib sicher und digital! 😉
+          <br/><br/>
+          - Florian'
         />
       </Container>
       <Container maxW={'4xl'} pt={16} as={Stack} spacing={12}>
