@@ -54,7 +54,7 @@ import {
       )
     }
   
-    if (mapsEnabled === false) {
+    if (mapsEnabled === false || true) {
       return (
         <Alert
           h="full"
