@@ -6,15 +6,24 @@ import {
   Flex,
   HStack,
   Heading,
+  IconButton,
   Image,
   Link,
+  LinkBox,
+  LinkOverlay,
   Spacer,
+  Stack,
   VStack
 } from '@chakra-ui/react'
 import {FC, ReactNode} from 'react'
 import {Field, useAuthenticationContext} from '@atsnek/jaen'
-
+import {FaGithub} from '@react-icons/all-files/fa/FaGithub'
+import {FaLinkedin} from '@react-icons/all-files/fa/FaLinkedin'
+import {FaTelegram} from '@react-icons/all-files/fa/FaTelegram'
+import {FaInstagram} from '@react-icons/all-files/fa/FaInstagram'
+import {FaTwitter} from '@react-icons/all-files/fa/FaTwitter'
 import Logo from '../gatsby-plugin-jaen/components/Logo'
+import Netsnek from './Netsnek'
 
 const Footer: FC = () => {
   const isAuthenticated = useAuthenticationContext().user !== null
@@ -40,10 +49,6 @@ const Footer: FC = () => {
       {
         label: 'Telegram',
         href: 'https://t.me/kleberbaum'
-      },
-      {
-        label: 'Twitter',
-        href: 'https://twitter.com/kleberbaum'
       },
       {
         label: 'Impressum',
@@ -176,14 +181,14 @@ const Footer: FC = () => {
           />
         </Box>
         <Flex mt={20} color="white" wrap={{base: 'wrap', sm: 'nowrap'}}>
-          <Flex alignItems={"center"}>
+          <Flex alignItems={'center'}>
             <Logo w="100px" h="200px" mr={-4} />
             <Field.Text
               name="FooterLogoText"
               defaultValue="leber"
               //display={{ base: "none", md: "flex"}}
               as={Heading}
-              whiteSpace={"nowrap"}
+              whiteSpace={'nowrap'}
               fontSize="5xl"
               lineHeight={1}
               fontWeight="bold"
@@ -198,7 +203,75 @@ const Footer: FC = () => {
             {linkElmnts}
           </HStack>
         </Flex>
-        <Divider mt={20} opacity={0.1} />
+        <Stack
+          mt={20}
+          as={LinkBox}
+          direction={'row'}
+          spacing="0"
+          mx="-12px"
+          flexWrap={'wrap'}>
+          <IconButton
+            as={LinkOverlay}
+            size="lg"
+            variant={'ghost'}
+            color="#ffffff"
+            icon={<Netsnek w={'25px'} h={'25px'} />}
+            aria-label="Netsnek"
+            href="https://netsnek.com/kleberbaum"
+            isExternal
+          />
+          <IconButton
+            as={LinkOverlay}
+            size="lg"
+            variant={'ghost'}
+            color="#ffffff"
+            icon={<FaGithub />}
+            aria-label="Github"
+            href="https://github.com/kleberbaum/"
+            isExternal
+          />
+          <IconButton
+            as={LinkOverlay}
+            size="lg"
+            variant={'ghost'}
+            color="#ffffff"
+            icon={<FaLinkedin />}
+            aria-label="Linkedin"
+            href="https://www.linkedin.com/in/kleberbaum/"
+            isExternal
+          />
+          <IconButton
+            as={LinkOverlay}
+            size="lg"
+            variant={'ghost'}
+            color="#ffffff"
+            icon={<FaInstagram />}
+            aria-label="Instagram"
+            href="https://www.instagram.com/kleberbaum/"
+            isExternal
+          />
+          <IconButton
+            as={LinkOverlay}
+            size="lg"
+            variant={'ghost'}
+            color="#ffffff"
+            icon={<FaTelegram />}
+            aria-label="Telegram"
+            href="https://t.me/kleberbaum"
+            isExternal
+          />
+          {/*<IconButton
+            as={LinkOverlay}
+            size="lg"
+            variant={'ghost'}
+            color="#ffffff"
+            icon={<FaTwitter />}
+            aria-label="Twitter"
+            href="https://twitter.com/kleberbaum"
+            isExternal
+          />*/}
+        </Stack>
+        <Divider mt={0} opacity={0.1} />
         <Field.Text
           name="FooterBottomText"
           defaultValue="Copyright © 2023 Florian Kleber, Florian Herbert Kleber IT. All rights reserved."

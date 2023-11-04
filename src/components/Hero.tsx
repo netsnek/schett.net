@@ -12,11 +12,19 @@ import {
   Text,
   useColorModeValue,
   Image,
-  Icon
+  Icon,
+  VisuallyHidden,
+  IconButton
 } from '@chakra-ui/react'
 import {useContactModal} from '../services/contact'
 import {Field} from '@atsnek/jaen'
 import {FaGithub} from '@react-icons/all-files/fa/FaGithub'
+import {FaLinkedin} from '@react-icons/all-files/fa/FaLinkedin'
+import {FaTelegram} from '@react-icons/all-files/fa/FaTelegram'
+import {FaInstagram} from '@react-icons/all-files/fa/FaInstagram'
+import {FaTwitter} from '@react-icons/all-files/fa/FaTwitter'
+import Jaen from './Jaen'
+import Netsnek from './Netsnek'
 
 const HeroSection = () => {
   const contactModal = useContactModal()
@@ -27,7 +35,7 @@ const HeroSection = () => {
   }
 
   return (
-    <Container maxW="6xl" px={{base: 6, md: 3}} py={24} overflow={"hidden"}>
+    <Container maxW="6xl" px={{base: 6, md: 3}} py={24} overflow={'hidden'}>
       <Stack
         direction={{base: 'column-reverse', lg: 'row'}}
         justifyContent="center">
@@ -66,7 +74,7 @@ const HeroSection = () => {
           </HStack>
           <Field.Text
             as={Heading}
-            fontSize={{base: "4xl", lg: "5xl"}}
+            fontSize={{base: '4xl', lg: '5xl'}}
             lineHeight={1}
             fontWeight="bold"
             textAlign="left"
@@ -132,7 +140,7 @@ const HeroSection = () => {
         </Stack>
         <Box ml={{base: 0, md: 5}} pos="relative" flex="1">
           <DottedBox />
-          <Box borderRadius={'xl'} overflow={'hidden'} m={'10%'}>
+          <Box overflow={'hidden'} m={'10%'}>
             {/* <video autoPlay muted>
               <source src="/N0jxFNt.mp4" type="video/mp4" />
               Your browser does not support the video tag.
@@ -145,11 +153,79 @@ const HeroSection = () => {
               w="full"
             /> */}
             <Image
+              borderRadius={'xl'}
               src="/images/florian_kleber.jpg"
               alt="Hero Image"
               h="full"
               w="full"
             />
+            <Stack
+              as={LinkBox}
+              direction={'row'}
+              spacing="0"
+              mx="-12px"
+              flexWrap={'wrap'}>
+              <IconButton
+                as={LinkOverlay}
+                size="lg"
+                variant={'ghost'}
+                color="brand.500"
+                icon={<Netsnek w={'25px'} h={'25px'} />}
+                aria-label="Netsnek"
+                href="https://netsnek.com/kleberbaum"
+                isExternal
+              />
+              <IconButton
+                as={LinkOverlay}
+                size="lg"
+                variant={'ghost'}
+                color="brand.500"
+                icon={<FaGithub />}
+                aria-label="Github"
+                href="https://github.com/kleberbaum/"
+                isExternal
+              />
+              <IconButton
+                as={LinkOverlay}
+                size="lg"
+                variant={'ghost'}
+                color="brand.500"
+                icon={<FaLinkedin />}
+                aria-label="Linkedin"
+                href="https://www.linkedin.com/in/kleberbaum/"
+                isExternal
+              />
+              <IconButton
+                as={LinkOverlay}
+                size="lg"
+                variant={'ghost'}
+                color="brand.500"
+                icon={<FaInstagram />}
+                aria-label="Instagram"
+                href="https://www.instagram.com/kleberbaum/"
+                isExternal
+              />
+              <IconButton
+                as={LinkOverlay}
+                size="lg"
+                variant={'ghost'}
+                color="brand.500"
+                icon={<FaTelegram />}
+                aria-label="Telegram"
+                href="https://t.me/kleberbaum"
+                isExternal
+              />
+              {/*<IconButton
+            as={LinkOverlay}
+            size="lg"
+            variant={'ghost'}
+            color="#ffffff"
+            icon={<FaTwitter />}
+            aria-label="Twitter"
+            href="https://twitter.com/kleberbaum"
+            isExternal
+          />*/}
+            </Stack>
           </Box>
         </Box>
       </Stack>

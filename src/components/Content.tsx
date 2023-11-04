@@ -192,7 +192,7 @@ const ContentSection = () => {
               <TestimonialText>
                 <Field.Text
                   name="ContentSectionTextTeam1"
-                  defaultValue='Als JavaScript-Großmeister🎯 und Open-Source-Veteran⚡, mit starker Cyber-Security-Grundlage🔒, liegt meine Expertise in der Webentwicklung und im Aufbau hochwirksamer ERP-Systeme und CMS⚙️. Die erfolgreiche Entwicklung eines gemeinsamen ERP-Systems namens "Jaen"✨, zusammen mit Florian Herbert Kleber IT, unterstreicht meine Fähigkeit, proaktiv und lösungsorientiert zu handeln. Als technischer Zauberer🧙‍♂️💻 bin ich stets bereit, Probleme zu bewältigen, bevor sie entstehen, und schaffe damit ein reibungsloses technologisches Erlebnis.'
+                  defaultValue='Als JavaScript-Großmeister🎯 und Open-Source-Veteran⚡, mit starker Cyber-Security-Grundlage🔒, liegt meine Expertise in der Webentwicklung und im Aufbau hochwirksamer ERP-Systeme ⚙️. Die erfolgreiche Entwicklung eines gemeinsamen ERP-Systems namens "Jaen"✨, zusammen mit Florian Herbert Kleber IT, unterstreicht meine Fähigkeit, proaktiv und lösungsorientiert zu handeln. Als technischer Zauberer🧙‍♂️💻 bin ich stets bereit, Probleme zu bewältigen, bevor sie entstehen, und schaffe damit ein reibungsloses technologisches Erlebnis.'
                 />
               </TestimonialText>
             </TestimonialContent>
@@ -222,6 +222,24 @@ const ContentSection = () => {
               title={'neurons.at'}
             />
           </Testimonial>
+          <Testimonial>
+            <TestimonialContent>
+              <TestimonialHeading>Design & Marketing</TestimonialHeading>
+              <TestimonialText>
+                <Field.Text
+                  name="ContentSectionTextTeam3"
+                  defaultValue="Wir sind eine kreative 🎨 Werbeagentur in der charmanten Stadt Villach. Zusammen mit Florian Herbert Kleber IT arbeiten wir daran, moderne, stilvolle und wirkungsvolle Online-Auftritte zu gestalten."
+                />
+              </TestimonialText>
+            </TestimonialContent>
+            <TestimonialAvatar
+              src={
+                'https://osg.snek.at/storage/BQACAgQAAxkDAAIsXWVGJpY-_RcMtfNgb1pEQHkhgpzcAAIdEQACCtM4Undi6U7j1-BRLwQ'
+              }
+              name={'Kanbon'}
+              title={'kanbon.at'}
+            />
+          </Testimonial>
         </Stack>
         <Field.Text
           mt={{base: '20 !important', md: '0'}}
@@ -233,7 +251,7 @@ const ContentSection = () => {
           textAlign="left"
           //color="#b57edc"
           name="MapSectionHeading"
-          defaultValue="Temporäre Büroräume 📦💼"
+          defaultValue="Temporäre <br/>Büroräume 📦💼"
         />
         <Box
           mb="8"
