@@ -133,7 +133,7 @@ const ContentSection = () => {
           textAlign="left"
           //color="#b57edc"
           name="ContentSectionHeading"
-          defaultValue="Wilkommen! 🙌 "
+          defaultValue="Wilkommen"
         />
         <Field.Text
           //mb="16"
@@ -142,25 +142,20 @@ const ContentSection = () => {
           fontWeight="400"
           color="gray.500"
           name="ContentSectionText"
-          defaultValue='Es war schon immer meine Leidenschaft, eigene Unternehmen zu leiten und mit Technologie zu jonglieren. Heute möchte ich mit dir darüber sprechen – von den Anfängen bis zur aktuellen Realität und der Zukunft, die wir gerade gestalten. 🚀
-          <br/><br/>
-          Meine Reise in die faszinierende Welt der Informationstechnologie begann mit der Gründung von Florian Herbert Kleber IT am 21.07.2020. Getrieben von meiner Leidenschaft✨, wollte ich den Bedarf an qualitativ hochwertigen und maßgeschneiderten IT-Dienstleistungen erfüllen. Daher gründete ich dieses Unternehmen in Villach, doch schon bald werden wir unseren Firmensitz nach Wien verlegen. 📦💼
-          <br/><br/>
-          Mein Fokus liegt immer auf Cyber-Security 🔒, Cloud-Diensten ☁️ und Softwareentwicklung 🎨, stets darauf bedacht, die besten Lösungen für meine Kunden zu bieten. 🙌 Mein Berufszweig ermöglicht es mir, für eine Vielzahl von Branchen zu arbeiten, immer auf der Suche nach den besten IT-Lösungen für jedes einzelne Unternehmen.
-          <br/><br/>
-          Auf dieser wunderbaren Reise hatten wir die Chance, unglaubliche Projekte zu verwirklichen, zusammen mit einigen der besten Experten in meinem Netzwerk. 🌐 Eines meiner liebsten Projekte war die Zusammenarbeit mit einem meiner Partner zur Entwicklung eines erfolgreichen ERP-Systems namens "Jaen". 😎
-          <br/><br/>
-          Ich ruhe mich aber nicht auf meinen Lorbeeren aus. Mein Unternehmen ist stets bemüht, sich weiterzuentwickeln und unser Angebot zu verfeinern. Deshalb freue ich mich, dir einen kleinen Vorgeschmack auf meine kommenden Unternehmungen geben zu können... 😉 
-          <br/><br/>
-          Wir planen die Gründung eines neuen Unternehmens für die Entwicklung von Enterprise-Software! Es ist eine aufregende Zeit und wir sind bereit, neue Meilensteine zu setzen. 💡🎯
-          <br/><br/>
-          Es ist erstaunlich zu sehen, wie weit Florian Herbert Kleber IT gekommen ist und ich freue mich auf das, was noch kommen wird. Unsere Arbeit ist unsere Leidenschaft und wir geben immer unser Bestes, um der IT-Welt das Beste von uns zu geben.
-          <br/><br/>
-          Ich danke dir, dass du mich auf dieser spannenden Reise begleitest und wir können es kaum erwarten, dir zu zeigen, was als Nächstes kommt! 🚀
-          <br/><br/>
-          Behalte also unsere Updates im Auge. Bis dahin, bleib sicher und digital! 😉
-          <br/><br/>
-          - Florian'
+          defaultValue='In der schnelllebigen digitalen Ära von heute kann es eine echte Herausforderung sein, den Überblick über die neuesten Technologien und Infrastrukturen zu behalten. Dies ist der Antrieb meiner Arbeit. <br/>
+          <br/>
+          Als ein Großmeister in JavaScript und Open-Source-Veteran, gepaart mit einem soliden Grundlagenwissen in Cyber-Security, biete ich die Fähigkeiten, die dazu benötigt werden, Ihr Geschäft auf das nächste Level zu heben. Indem ich mich immer auf eine proaktive und lösungsorientierte Arbeitsweise fokussiere, diene ich Ihrem Unternehmen als vertrauenswürdiger Partner in der Webentwicklung und im Aufbau wirkungsvoller ERP-Systeme.<br/>
+          <br/>
+          "Jaen", ein erfolgreiches ERP-System, das in Zusammenarbeit mit Florian Herbert Kleber IT entwickelt wurde, unterstreicht meine Professionalität und Expertise in diesem Bereich. Die Idee für "Jaen" entstand aus der Not heraus, die wir in vielen Unternehmen erkannten – die Verwendung suboptimaler ERP-Systeme. <br/>
+          <br/>
+          Mit diesem fortschrittlichen und maßgeschneiderten System konnten wir den Workflow unserer Kunden erheblich optimieren. Es war ein arbeitsintensives, aber unglaublich lohnendes Projekt und dient als Beweis für unsere Problemlösungskompetenzen.<br/>
+          <br/>
+          Zufriedenheit meiner Kunden ist meine oberste Priorität. Daher sehe ich jedes Projekt als eine Chance, die Balance zwischen Ihren Anforderungen und dem, was technologisch machbar und sinnvoll ist, zu finden. Dabei stelle ich immer sicher, dass jedes System, jede Software und jede Plattform, die ich entwickle, den höchstmöglichen Sicherheitsstandards entspricht.<br/>
+          <br/>
+          Mit Nico Schett an Ihrer Seite erhalten Sie nicht nur Zugang zu hochqualitativen Enterprise Software-Lösungen, sondern auch einen Partner, der Ihre Geschäftsprozesse versteht und Ihnen alle Tools an die Hand gibt, um Ihren Fortschritt voranzutreiben.<br/>
+          <br/>
+          - Nico Schett
+          '
         />
       </Container>
       <Container maxW={'4xl'} pt={16} as={Stack} spacing={12}>
@@ -174,13 +169,13 @@ const ContentSection = () => {
             fontWeight="bold"
             textAlign="left"
             name="ContentSectionHeadingTeam"
-            defaultValue="Partner 🤝"
+            defaultValue="Partner"
           />
           <Field.Text
             fontSize="1.2rem"
             color="gray.500"
             name="ContentSectionTextTeam"
-            defaultValue="Ich bieten branchenübergreifende Kundenbetreuung mit Unterstützung von Experten aus meinem Netzwerk. Gemeinsam mit unseren Partnern, decken wir ein breites Spektrum an Dienstleistungen ab. Wir sind für dich da, um alle deine technologischen Herausforderungen zu meistern💪🚀!"
+            defaultValue="Ich bieten branchenübergreifende Kundenbetreuung mit Unterstützung von Experten aus meinem Netzwerk. Gemeinsam mit unseren Partnern, decken wir ein breites Spektrum an Dienstleistungen ab. Wir sind für dich da, um alle deine technologischen Herausforderungen zu meistern."
           />
         </Stack>
         <Stack
@@ -188,20 +183,20 @@ const ContentSection = () => {
           spacing={{base: 10, md: 4, lg: 10}}>
           <Testimonial>
             <TestimonialContent>
-              <TestimonialHeading>Software Entwicklung</TestimonialHeading>
+              <TestimonialHeading>IT & Cloud</TestimonialHeading>
               <TestimonialText>
                 <Field.Text
                   name="ContentSectionTextTeam1"
-                  defaultValue='Als JavaScript-Großmeister🎯 und Open-Source-Veteran⚡, mit starker Cyber-Security-Grundlage🔒, liegt meine Expertise in der Webentwicklung und im Aufbau hochwirksamer ERP-Systeme ⚙️. Die erfolgreiche Entwicklung eines gemeinsamen ERP-Systems namens "Jaen"✨, zusammen mit Florian Herbert Kleber IT, unterstreicht meine Fähigkeit, proaktiv und lösungsorientiert zu handeln. Als technischer Zauberer🧙‍♂️💻 bin ich stets bereit, Probleme zu bewältigen, bevor sie entstehen, und schaffe damit ein reibungsloses technologisches Erlebnis.'
+                  defaultValue='Als Experte für IT-Services und ein Meister der Cloud-Technologie🚀, mit starker Basis in der Cyber-Security🔒, liegt meine Expertise in der Betreuung von IT-Systemen und in der Optimierung von Geschäftsprozessen. Die erfolgreiche Entwicklung eines gemeinsamen ERP-Systems namens "Jaen"✨, zusammen mit Agentur Nico Schett, unterstreicht meine Fähigkeit, proaktiv und lösungsorientiert zu handeln. Ich stehe stets bereit, Herausforderungen zu meistern, bevor sie entstehen, und sorge somit für ein reibungsloses technologisches Erlebnis. 💻🔧 '
                 />
               </TestimonialText>
             </TestimonialContent>
             <TestimonialAvatar
               src={
-                'https://osg.snek.at/storage/BQACAgQAAxkDAAIsXGVFHb-_FNhhjNXyNo6Tb4E-1ehnAAJXDwACCtMwUgil7_Q_Zld3LwQ'
+                'https://osg.snek.at/storage/BQACAgQAAxkDAAIsX2VG2JlO_XvDt3JcexGfxSLesn_oAAJZEAACLqAxUnY2C2EatToLLwQ'
               }
-              name={'Nico Schett'}
-              title={'schett.net'}
+              name={'Florian Kleber'}
+              title={'fhkit.at'}
             />
           </Testimonial>
           <Testimonial>
@@ -251,7 +246,7 @@ const ContentSection = () => {
           textAlign="left"
           //color="#b57edc"
           name="MapSectionHeading"
-          defaultValue="Büroräume 📦💼"
+          defaultValue="Büroräume"
         />
         <Box
           mb="8"

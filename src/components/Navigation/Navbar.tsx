@@ -74,7 +74,7 @@ export const Navbar: FC<INavbarProps> = ({
             //textAlign="left"
             //color="#b57edc"
           >
-            Florian Herbert Kleber IT
+            Agentur Nico Schett
           </Text>
         </HStack>
       </Flex>

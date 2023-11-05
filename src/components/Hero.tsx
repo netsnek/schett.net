@@ -90,11 +90,9 @@ const HeroSection = () => {
             fontWeight="400"
             color="gray.500"
             name="HeroSectionText"
-            defaultValue="Entdecke mit mir die Welt der IT-Dienstleistungen. 💻🚀 Als professioneller IT-Berater helfe ich dir dabei, deine technischen Herausforderungen zu meistern. 🎯 Meine Spezialgebiete sind Security und Cloudcomputing. ⛅🔒 <br/>
-            <br/>
-            Auf der Suche nach einer Optimierung deines Systems?<br/>
-            <br/>
-            Lass dich von mir beraten! 🤝 Erfahrung, Leidenschaft und technisches Know-how aus Österreich. Und ja, ich finde immer eine Lösung (aber ich empfehle, das Problem nicht selbst zu lösen 😉)."
+            defaultValue="Tauchen Sie mit mir in die Welt der Enterprise Software ein. Als Experte in Cyber-Security und JavaScript, entwickle ich effiziente und benutzerfreundliche ERP-Systeme.
+            <br/><br/>
+            Gemeinsam bewältigen wir jede technische Herausforderungen und steigern die Effizienz Ihrer Geschäftsprozesse."
           />
           <HStack
             spacing={{base: 0, sm: 2}}
@@ -154,7 +152,7 @@ const HeroSection = () => {
             /> */}
             <Image
               borderRadius={'xl'}
-              src="/images/florian_kleber.jpg"
+              src="/images/nico_schett.jpg"
               alt="Hero Image"
               h="full"
               w="full"
@@ -172,7 +170,7 @@ const HeroSection = () => {
                 color="brand.500"
                 icon={<Netsnek w={'25px'} h={'25px'} />}
                 aria-label="Netsnek"
-                href="https://netsnek.com/kleberbaum"
+                href="https://netsnek.com/schett"
                 isExternal
               />
               <IconButton
@@ -182,17 +180,7 @@ const HeroSection = () => {
                 color="brand.500"
                 icon={<FaGithub />}
                 aria-label="Github"
-                href="https://github.com/kleberbaum/"
-                isExternal
-              />
-              <IconButton
-                as={LinkOverlay}
-                size="lg"
-                variant={'ghost'}
-                color="brand.500"
-                icon={<FaLinkedin />}
-                aria-label="Linkedin"
-                href="https://www.linkedin.com/in/kleberbaum/"
+                href="https://github.com/schettn/"
                 isExternal
               />
               <IconButton
@@ -202,7 +190,7 @@ const HeroSection = () => {
                 color="brand.500"
                 icon={<FaInstagram />}
                 aria-label="Instagram"
-                href="https://www.instagram.com/kleberbaum/"
+                href="https://www.instagram.com/schettn/"
                 isExternal
               />
               <IconButton
@@ -212,7 +200,7 @@ const HeroSection = () => {
                 color="brand.500"
                 icon={<FaTelegram />}
                 aria-label="Telegram"
-                href="https://t.me/kleberbaum"
+                href="https://t.me/schettn"
                 isExternal
               />
               {/*<IconButton
